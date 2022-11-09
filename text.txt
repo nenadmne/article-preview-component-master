@@ -1,0 +1,40 @@
+Shift the overall look and feel by adding these wonderful 
+touches to furniture in your home
+
+Ever been in a room and felt like something was missing? Perhaps 
+it felt slightly bare and uninviting. I’ve got some simple tips 
+to help you make any room feel complete.
+
+Michelle Appleton
+28 Jun 2020
+
+Share
+  
+
+  
+document.getElementById('shere-div').appendChild(shere);
+
+document.getElementById('img-div').appendChild(facebook);
+document.getElementById('img-div').appendChild(twitter);
+document.getElementById('img-div').appendChild(pinterest);
+
+const shere = document.createElement('p');
+shere.id = 'shere'
+
+const child1 = document.getElementById ('img-div');
+const child2 = document.getElementById ('shere-div');
+
+const facebook = document.createElement('img');
+facebook.id = 'facebook'
+
+const twitter = document.createElement('img');
+twitter.id = 'twitter'
+
+const pinterest = document.createElement('img');
+pinterest.id = 'pin'
+
+const shereDiv = document.createElement('div');
+shereDiv.id = 'shere-div'
+
+const imgDiv = document.createElement('div');
+imgDiv.id = 'img-div'

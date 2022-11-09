@@ -1,0 +1,279 @@
+* {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    border: 0;
+    font-weight: 500;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    min-height: 650px;
+}
+
+body {
+    background-color:hsl(210, 46%, 95%);
+    padding: 15% 7%;
+}
+
+body, .top , .bottom, main, .content-div, .shere-div, .profile-img, #to-shere, #img-div{
+    display: flex;
+}
+
+body, .top , .bottom, main, .content-div, .profile-img, #img-div {
+    box-sizing: border-box;
+}
+
+html, body, .top, .top img, .profile-img img {
+    width: 100%;
+}
+
+main {
+    border-radius: 1rem;
+    width: 322.5px;
+}
+
+main, .bottom {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.content-div {
+    flex-direction: row;
+    margin: 0% 10% 5% 10%;
+}
+
+.bottom {
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.text-div {
+    padding: 10% 10% 0 10%;
+}
+
+.top {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.top img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+h1, h2 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+p {
+    color: hsl(212, 23%, 69%);
+    margin-bottom: 7%;
+}
+
+.profile-img img {
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.name-div {
+    flex-basis: 80%;
+    align-self: center;
+}
+
+.shere-div, .profile-img, body, #to-shere {
+    justify-content: center;
+    align-items: center;
+}
+
+.shere-div {
+    flex-basis: 20%;
+    justify-content: right;
+    align-items: center;
+    order: 3;
+}
+
+button {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.name-div p {
+    margin: 0;
+}
+
+#to-shere {
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 0.2rem;
+    order: 1;
+    flex-basis: 20%;
+    padding: 5%;
+}
+
+#facebook {
+    content: url(./images/icon-facebook.svg);
+}
+
+#twitter {
+    content: url(./images/icon-twitter.svg);
+}
+
+#pin {
+    content: url(./images/icon-pinterest.svg);
+}
+
+#facebook, #twitter, #pin {
+    width: 15%;
+    height: max-content;
+    display: inline-flex;
+    margin-right: 10%;
+}
+
+#facebook:hover, #twitter:hover, #pin:hover, button {
+    cursor: pointer;
+}
+
+#img-div {
+    justify-content: left;
+    align-items: center;
+    order: 2;
+    flex-basis: 60%;
+}
+
+@media (min-width:576px) {
+    main {
+        flex-direction: row;
+        width: 800px;
+        height: fit-content;
+    }
+
+    .top {
+        flex-basis: 40%;
+    }
+
+    .top img, .top {
+        border-radius: 1rem 0 0 1rem; 
+    }
+
+    .bottom {
+        flex-basis: 60%;
+        padding: 5%;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bottom p{
+        font-size: 1.1rem;
+    }
+
+    .profile-img {
+        width: 15%;
+    }
+
+    button {
+        width: 60%;
+    }
+
+    html, body {
+        min-height: none;
+        min-width: 1440px;
+    }
+    body {
+    padding: 0;
+    }
+
+    .text-div {
+        position: relative;
+    }
+
+    #shape-div {
+    width: 70%;
+    height: 70px;
+    background: hsl(214, 17%, 51%);
+    position: absolute;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 51%;
+    bottom: 25px;
+    flex-direction: row;
+    }
+
+    #shape-div::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    transform: translate(50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(214, 17%, 51%);
+    }
+
+    #facebook1 {
+        content: url(./images/icon-facebook.svg);
+    }
+    
+    #twitter1 {
+        content: url(./images/icon-twitter.svg);
+    }
+    
+    #pin1 {
+        content: url(./images/icon-pinterest.svg);
+    }
+    
+    #facebook1, #twitter1, #pin1 {
+        width: 20%;
+        height: max-content;
+        display: inline-flex;
+        margin-right: 15%;
+    }
+
+    #facebook1:hover, #twitter1:hover, #pin1:hover{
+        cursor: pointer;
+    }
+
+    #to-shere1 {
+        justify-content: right;
+        align-items: center;
+        color: hsl(212, 23%, 69%);
+        letter-spacing: 0.2rem;
+        order: 1;
+        flex-basis: 20%;
+        padding: 7%;
+        flex-basis: 30%;
+        font-size: 1.2rem;
+    }
+
+    #img-div1 {
+        justify-content: left;
+        align-items: center;
+        order: 2;
+        flex-basis: 60%;
+        box-sizing: border-box;
+        flex-basis: 70%;
+        padding: 5% 5% 5% 0;
+    }
+
+    #img-div1, #to-shere1, #shape-div{
+        display: flex;
+    }
+}
+
